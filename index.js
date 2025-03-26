@@ -6,7 +6,7 @@ app.get('/', (request, response) => {
     response.send('Ola mundo!');}
 );
 app.get('/mensagem', (request, response) => {
-    response.send('Boa tarde');
+    response.send('Boa tarde ' + request.parms['nome']);
 }
 )
 app.listen(port, () => {
